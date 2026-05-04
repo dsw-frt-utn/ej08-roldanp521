@@ -2,6 +2,7 @@
 using Dsw2026Ej8.problema_2;
 using Dsw2026Ej8.problema_3;
 using Dsw2026Ej8.problema_4;
+using Dsw2026Ej8.problema_5;
 using System.Dynamic;
 
 namespace Dsw2026Ej8
@@ -30,6 +31,15 @@ namespace Dsw2026Ej8
             double promedio = prom.CalcularPromedio(10,5,5);
             Console.WriteLine("///PROMEDIO///");
             Console.WriteLine(promedio);
+
+            
+            Sale ventaMayorista = new WholesaleSale(1000m);
+            Sale ventaMinorista = new RetailSale(1000m);
+            Problema5 prob5 = new Problema5();
+            decimal totalMinorista = prob5.ObtenerImporteFinal(ventaMinorista);
+            decimal totalMayorista = prob5.ObtenerImporteFinal(ventaMayorista);
+            Console.WriteLine($"Total Venta Minorista: ${totalMinorista}");
+            Console.WriteLine($"Total Venta Mayorista: ${totalMayorista}");
         }
     }
 }

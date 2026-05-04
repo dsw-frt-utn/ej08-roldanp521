@@ -82,7 +82,6 @@ namespace Dsw2026Ej8.problema_4
             {
                 return (double)(nota1 + nota2 + nota3) / 3;
             }
-
             return 0;
         }
     }
