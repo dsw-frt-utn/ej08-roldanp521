@@ -3,6 +3,7 @@ using Dsw2026Ej8.problema_2;
 using Dsw2026Ej8.problema_3;
 using Dsw2026Ej8.problema_4;
 using Dsw2026Ej8.problema_5;
+using Dsw2026Ej8.problema_6;
 using System.Dynamic;
 
 namespace Dsw2026Ej8
@@ -40,6 +41,10 @@ namespace Dsw2026Ej8
             decimal totalMayorista = prob5.ObtenerImporteFinal(ventaMayorista);
             Console.WriteLine($"Total Venta Minorista: ${totalMinorista}");
             Console.WriteLine($"Total Venta Mayorista: ${totalMayorista}");
+
+            Problema6 prob6 = new Problema6();
+            string resultado = prob6.NormalizarCodigoProducto(" ab 123 x ");
+            Console.WriteLine($"Codigo: {resultado}");
         }
     }
 }
