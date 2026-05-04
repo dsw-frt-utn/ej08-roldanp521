@@ -1,6 +1,7 @@
 ﻿using Dsw2026Ej8.Domain;
 using Dsw2026Ej8.problema_2;
 using Dsw2026Ej8.problema_3;
+using Dsw2026Ej8.problema_4;
 using System.Dynamic;
 
 namespace Dsw2026Ej8
@@ -24,6 +25,11 @@ namespace Dsw2026Ej8
             string modificacion = pbrl3.CompararCopias(15, product2);
             Console.WriteLine("///PRODUCTO3///");
             Console.WriteLine(modificacion);
+
+            Problema4 prom = new Problema4 (10,5,5);
+            double promedio = prom.CalcularPromedio(10,5,5);
+            Console.WriteLine("///PROMEDIO///");
+            Console.WriteLine(promedio);
         }
     }
 }
