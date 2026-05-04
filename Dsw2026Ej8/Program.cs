@@ -1,5 +1,6 @@
 ﻿using Dsw2026Ej8.Domain;
 using Dsw2026Ej8.problema_2;
+using Dsw2026Ej8.problema_3;
 using System.Dynamic;
 
 namespace Dsw2026Ej8
@@ -17,6 +18,12 @@ namespace Dsw2026Ej8
             string total = product1.CrearResumenVenta(1000, "durazno" ,10 , 15);
             Console.WriteLine("///PRODUCTO2///");
             Console.WriteLine(total);
+
+            Product product2 = new Product("anana", 15);
+            Problema3 pbrl3 = new Problema3();
+            string modificacion = pbrl3.CompararCopias(15, product2);
+            Console.WriteLine("///PRODUCTO3///");
+            Console.WriteLine(modificacion);
         }
     }
 }
