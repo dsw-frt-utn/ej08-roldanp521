@@ -8,10 +8,9 @@ namespace Dsw2026Ej8
         static void Main(string[] args)
         {
             ProductHelper product = new ProductHelper (1000,"manzana",15000);
+            string etiqueta       = product.ObtenerEtiquetaProducto (1000, "manzana", 15000);
             Console.WriteLine("///PRODUCTO///");
-            Console.WriteLine($"codigo: {product.GetCode()}");
-            Console.WriteLine($"precio: {product.GetPrice()}");
-            Console.WriteLine($"descripcion: {product.GetDescription()}");
+            Console.WriteLine(etiqueta);
         }
     }
 }
